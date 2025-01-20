@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-light {
+    
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 *{
     margin: 0;
     padding: 0;
 }
+:root{
+    --skyblue: rgba(1, 172, 253, 1);
+    --aquamerin: rgba(5, 212, 223, 1);
+    --blue: rgba(93, 88, 239, 1);
+    --orange: rgba(254, 163, 1, 1);
+    --green: rgba(149, 178, 38, 1);
+    --font: "Quicksand", serif;
+
+}
+.para{
+    font-family:var(--font)
+}
+
+.hamburger {
+    font-size: 32px;
+    color: #161c24;
+    cursor: pointer;
+  }
+  
+  .hamburger:hover {
+    color: #60a346;
+  }
+  
