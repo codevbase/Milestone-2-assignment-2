@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
-.quicksand-light {
-    
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
 
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--font);
 }
 :root{
     --skyblue: rgba(1, 172, 253, 1);
@@ -21,9 +16,7 @@
     --font: "Quicksand", serif;
 
 }
-.para{
-    font-family:var(--font)
-}
+
 
 .hamburger {
     font-size: 32px;
@@ -34,4 +27,60 @@
   .hamburger:hover {
     color: #60a346;
   }
+
+
+nav li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#home{
+    color: var(--orange);
+}
+
+#about{
+    color: var(--skyblue);
+}
+
+#facilities{
+    color: var(--aquamerin);
+}
+
+#admission{
+    color: var(--blue);
+}
+
+nav .btn{
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 12px;
+    width: 197px;
+    height: 50px;
+    font-size: large;
+}
+
+.school-logo{
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* flex-direction: start; */
+    gap: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
   
