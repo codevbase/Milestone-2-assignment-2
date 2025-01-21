@@ -74,6 +74,8 @@ nav li, a{
     justify-content: space-around;
 }
 
+/* banner section starts here */
+
 .banner .btn{
     background-color: var(--black);
 }
@@ -107,6 +109,9 @@ nav li, a{
 }
 
 
+/* banner section ends here */
+
+
 #hamburger{
     display: none;
 }
@@ -136,6 +141,8 @@ nav li, a{
         padding-left: 20px;
     }
 
+    
+/* small device banner   */
 
     .banner .content{
         display: flex;
@@ -144,8 +151,15 @@ nav li, a{
         flex-direction: column-reverse;
         /* width: 100vw; */
         border: 2px solid tomato;
-        background-color: #60a346;
+        /* background-color: #60a346; */
         height: 1000px;
+    }
+
+    .enroll-btn .btn{
+        display: block;
+        background-color: var(--black);
+        width: 150px;
+        height: 50px;
     }
 
 
@@ -159,7 +173,7 @@ nav li, a{
         height: fit-content;
     }
    
-
+ 
 
 
     .school{
@@ -252,6 +266,36 @@ nav li, a{
       #hamburger:hover {
         color: #60a346;
       }
+
+
+      .banner .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* width: 100vw; */
+        border: 2px solid tomato;
+        /* background-color: #60a346; */
+        height: 1000px;
+    }
+
+    .enroll-btn .btn{
+        display: block;
+        background-color: var(--black);
+        width: 150px;
+        height: 50px;
+    }
+
+
+    .banner-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* border: 5px solid tomato; */
+        height: fit-content;
+    }
     
 }
 
