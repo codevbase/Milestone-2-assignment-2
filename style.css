@@ -73,13 +73,11 @@ nav .btn{
     justify-content: space-around;
 }
 
-.container #hamburger {
-    display: none;
-    
-    
-  }
 
-  
+#hamburger{
+    display: none;
+}
+ 
   
 
 
@@ -121,9 +119,13 @@ nav .btn{
         display: none;
     }
 
+   
+
+    
+
 
     #hamburger {
-        /* display: none; */
+        display: block;
         padding-right: 20px;
         font-size: 32px;
         color: #161c24;
@@ -135,6 +137,67 @@ nav .btn{
       }
     
 }
+
+
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+
+    .container{
+        display: flex;
+        background-color: white;
+        /* border: 2px solid #675b5b; */
+        align-items: center;
+        justify-content: space-between;
+        
+        
+        
+        box-shadow: 0 2px 5px rgba(234, 179, 13, 0.675);
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+
+   
+
+
+
+    .school{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
+   
+
+    
+
+
+    #hamburger {
+        display: block;
+        padding-right: 20px;
+        font-size: 32px;
+        color: #161c24;
+        cursor: pointer;
+      }
+      
+      #hamburger:hover {
+        color: #60a346;
+      }
+    
+}
+
+
 
 
   
