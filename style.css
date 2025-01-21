@@ -14,6 +14,7 @@
     --orange: rgba(254, 163, 1, 1);
     --green: rgba(149, 178, 38, 1);
     --font: "Quicksand", serif;
+    --black: rgba(17, 17, 17, 1);
 
 }
 
@@ -41,7 +42,7 @@ nav li, a{
     color: var(--blue);
 }
 
-nav .btn{
+.btn{
     color: white;
     background-color: var(--orange);
     border: none;
@@ -71,6 +72,38 @@ nav .btn{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.banner .btn{
+    background-color: var(--black);
+}
+
+.emp{
+    color: var(--orange);
+}
+
+.towards{
+    color: var(--skyblue);
+}
+
+.banner-txt{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: left;
+    gap: 20px;
+    /* border: 5px solid tomato; */
+}
+
+.banner .content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: 44rem;
 }
 
 
@@ -103,6 +136,28 @@ nav .btn{
         padding-left: 20px;
     }
 
+
+    .banner .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* width: 100vw; */
+        border: 2px solid tomato;
+        background-color: #60a346;
+        height: 1000px;
+    }
+
+
+    .banner-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* border: 5px solid tomato; */
+        height: fit-content;
+    }
    
 
 
@@ -118,6 +173,9 @@ nav .btn{
     .btn{
         display: none;
     }
+
+
+    
 
    
 
