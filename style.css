@@ -557,6 +557,7 @@ border-radius: 20px 20px 0px 0;
     align-items: center;
     justify-content: space-evenly;
     color: white;
+    /* padding: 2vw; */
     
 }
 
@@ -572,6 +573,7 @@ border-radius: 20px 20px 0px 0;
     display: flex;
     justify-content: left;
     align-items: center;
+    background-color: white;
 }
 
 .ad-para{
@@ -810,6 +812,27 @@ footer{
     flex-direction: column;
     gap: 20vh;
 
+}
+
+.advertise{
+    width: 100vw;
+    padding: 2vw;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.links{
+    width: 100vw;
+    padding: 2vw;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.contacts{
+    width: 100vw;
+    padding: 2vw;
+    justify-content: center;
+    /* align-items: center; */
 }
 
       
