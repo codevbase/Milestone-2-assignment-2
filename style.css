@@ -274,6 +274,275 @@ nav li, a{
     justify-content: center;
     align-items: center;
 }
+
+.stories{
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-container{
+    height: 650px;
+    
+    background: linear-gradient(rgba(254, 163, 1, 0) 0%, rgba(254, 161, 1, 0.311) 100%), url('./assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 50px;
+    
+    
+}
+
+
+.story-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.story-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 90px;
+    /* background-color: bisque; */
+
+}
+
+.brief-story{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    /* display: none; */
+    row-gap: 5px;
+    column-gap: 5px;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.main-card{
+    position: relative;
+    /* max-width: calc(50% - 10px); */
+    height: 100%;
+    width: 100vh;
+    /* background-color:white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.main-card .photo{
+background: url(./assets/story-1.png) no-repeat center center;
+background-size: cover;
+width: 100%;
+height: 50%;
+border-radius: 20px 20px 0px 0;
+
+}
+
+
+
+.head-details{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding:2rem 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.date-box{
+    position:absolute;
+    top: 45%;
+    width: 10rem;
+    height: 2rem;
+    color: white;
+    background-color: var(--aquamerin);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+
+
+
+
+.story-card-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+}
+
+.story-card-2 .card-photo{
+    background: url(./assets/story-2.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0;
+}
+
+
+
+.story-card-2 .sub-headline{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 0 0 20px 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+
+}
+
+.story-card-2 .date-box {
+    top: 62%;
+    left: 5%;
+    background-color: rgba(149, 178, 38, 1);
+}
+
+.story-card-3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+}
+
+.story-card-3 .card-photo{
+    background: url(./assets/story-3.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0;
+}
+
+.story-card-3 .sub-headline{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 0 0 20px 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+
+.story-card-3 .date-box {
+    top: 62%;
+    left: 5%;
+    background-color: rgba(93, 88, 240, 1);
+}
+
+
+.story-card-4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+}
+
+.story-card-4 .card-photo{
+    background: url(./assets/story-4.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0;
+}
+
+.story-card-4 .sub-headline{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 0 0 20px 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+
+.story-card-4 .date-box {
+    top: 50%;
+    left: 5%;
+    background-color: rgba(93, 88, 240, 1);
+}
+
+.story-card-5{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    height:100%;
+    width: 100%;
+}
+
+.story-card-5 .card-photo{
+    background: url(./assets/story-5.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0;
+}
+
+.story-card-5 .sub-headline{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 0 0 20px 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.story-card-5 .date-box {
+    top: 48%;
+    left: 5%;
+    background-color: var(--skyblue);
+}
+
+.brief-story .date-box, .sub-headline{
+    font-size: x-small;
+}
+
+
+
+
  
   
 
@@ -385,6 +654,51 @@ nav li, a{
 
       .visiting{
         display: none;
+      }
+
+      .main-card .photo{
+        height: 50%;
+        width: 100vw;
+        /* border-radius: 10px; */
+        background-size: cover;
+      }
+
+      .main-card .head-details{
+        display: flex;
+        height:50%;
+        width: 100vw;
+      }
+
+      .main-card .date-box{
+        top: 52%;
+      }
+
+      .main-card .headline{
+        font-size: 1rem;
+      }
+
+      .story-card-container{
+        flex-direction: column;
+        height: 1200px;
+        width: 100vw;        
+      }
+      .main-card{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 25px;
+        margin-left: 25px;
+      }
+
+      .stories{
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .story-container{
+        height: 1200px;
       }
 
       
