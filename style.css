@@ -7,6 +7,12 @@
     padding: 0;
     font-family: var(--font);
 }
+
+body, h1, p, div, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --skyblue: rgba(1, 172, 253, 1);
     --aquamerin: rgba(5, 212, 223, 1);
@@ -52,6 +58,10 @@ nav li, a{
     font-size: large;
 }
 
+.btn:hover{
+    background-color: var(--skyblue);
+}
+
 .school-logo{
     display: flex;
     /* justify-content: left; */
@@ -76,8 +86,39 @@ nav li, a{
 
 /* banner section starts here */
 
+.banner{
+    padding: 20px;
+}
+
+.banner-conainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
 .banner .btn{
     background-color: var(--black);
+}
+
+.banner .btn:hover{
+ background-color: var(--skyblue);
+}
+
+.banner-photo{
+    max-width: 50%;
+}
+
+.banner-photo img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .emp{
@@ -89,6 +130,7 @@ nav li, a{
 }
 
 .banner-txt{
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     /* justify-content: left; */
@@ -97,15 +139,17 @@ nav li, a{
     /* border: 5px solid tomato; */
 }
 
-.banner .content{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
+
 
 .banner-title{
-    font-size: 3rem;
-    font-weight: 44rem;
+    font-size: 2.5rem;
+    font-weight: 43rem;
+    margin-bottom: 20px;
+}
+
+.banner-description{
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 
@@ -235,42 +279,55 @@ nav li, a{
 
 
 
-@media screen and (max-width:576px) {
+@media (max-width: 768px) {   
     
     .container{
         display: flex;
         background-color: white;
         /* border: 2px solid #675b5b; */
         align-items: center;
-        justify-content: space-between;
-        
+        justify-content: space-between;       
         
         
         box-shadow: 0 2px 5px rgba(234, 179, 13, 0.675);
     }
 
-    .content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 20px;
-    }
-
-    
+        
 /* small device banner   */
 
     .banner .content{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        /* align-items: center; */
         flex-direction: column-reverse;
+        text-align: center;
         /* width: 100vw; */
         /* border: 2px solid tomato; */
         /* background-color: #60a346; */
-        height: 1000px;
+        /* height: 1000px; */
+    }
+    .banner-txt,.banner-photo{
+        max-width: 100%;
+    }
+    .banner-photo{
+        width: 100%; 
+        /* max-width: 300px; */
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+
+    .banner-description{
+        font-size: 0.9rem;
     }
 
     .enroll-btn .btn{
+        font-size: 0.9rem;
+        padding: 6px 12px;
         display: block;
         background-color: var(--black);
         width: 150px;
@@ -303,11 +360,6 @@ nav li, a{
         display: none;
     }
 
-
-    
-
-   
-
     
 
 
@@ -322,13 +374,27 @@ nav li, a{
       #hamburger:hover {
         color: #60a346;
       }
+
+      .curriculum-container .title{
+        font-size: 2.5rem;
+      }
+
+      .card-container{
+        flex-direction: column;
+      }
+
+      .visiting{
+        display: none;
+      }
+
+      
     
 }
 
 
 
 
-@media screen and (min-width:576px) and (max-width:992px){
+@media (max-width: 480px){
 
     .container{
         display: flex;
@@ -340,7 +406,7 @@ nav li, a{
         
         
         box-shadow: 0 2px 5px rgba(234, 179, 13, 0.675);
-    }
+    } 
 
     .content{
         display: flex;
@@ -349,30 +415,30 @@ nav li, a{
         padding-left: 20px;
     }
 
+    .banner-title{
+        font-size: 1.5rem;
+    }
+
+    .banner-description{
+        font-size: 0.8rem;
+    }
+
+    .enroll-btn .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        display: block;
+        background-color: var(--black);
+        width: 150px;
+        height: 50px;
+    }
+
    
-
-
-
-    .school{
-        display: none;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .btn{
-        display: none;
-    }
-
-   
-
     
 
 
     #hamburger {
         display: block;
-        padding-right: 20px;
+        /* padding-right: 20px; */
         font-size: 32px;
         color: #161c24;
         cursor: pointer;
@@ -394,12 +460,7 @@ nav li, a{
         height: 1000px;
     }
 
-    .enroll-btn .btn{
-        display: block;
-        background-color: var(--black);
-        width: 150px;
-        height: 50px;
-    }
+    
 
 
     .banner-txt{
@@ -411,6 +472,11 @@ nav li, a{
         /* border: 5px solid tomato; */
         height: fit-content;
     }
+
+
+    .curriculum-container .title{
+        font-size: 2rem;
+      }
     
 }
 
